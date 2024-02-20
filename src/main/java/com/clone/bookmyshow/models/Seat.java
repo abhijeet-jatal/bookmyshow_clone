@@ -1,7 +1,7 @@
 package com.clone.bookmyshow.models;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 @Data
@@ -10,6 +10,6 @@ public class Seat extends BaseModel{
     private  String seatNumber;
     private int rowVal;
     private int colVal;
-    @ManyToMany
+    @ManyToOne
     private SeatType seatType;
 }
