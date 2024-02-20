@@ -14,5 +14,4 @@ public class Screen extends BaseModel{
     @Enumerated(EnumType.ORDINAL)
     @ElementCollection
     private List<Feature> features;
-    private Theater theater;
 }

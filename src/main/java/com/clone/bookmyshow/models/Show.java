@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@Entity(name = "shows")
 public class Show extends BaseModel{
     @ManyToOne
     private Movie movie;
