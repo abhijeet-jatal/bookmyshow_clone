@@ -26,7 +26,8 @@ public class UserService {
         // Create a new user object and persists in Db
         User user = new User();
         user.setEmail(email);
-        user.setPassword(bCryptPasswordEncoder.encode(password));
+//        user.setPassword(bCryptPasswordEncoder.encode(password));
+        user.setPassword(password);
         user.setBooking(new ArrayList<>());
         // if(bCryptPasswordEncoder.matches(password, user.getPassword()))
         return userRepository.save(user);
